@@ -1,0 +1,17 @@
+# Dependências
+node_modules/
+
+# Compilação do Next.js
+.next/
+out/
+
+# Vercel
+.vercel/
+
+# Variáveis locais e arquivos temporários
+.env*
+*.log
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
