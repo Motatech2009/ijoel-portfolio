@@ -29,6 +29,8 @@ const resources = [
 
 const whatsappUrl =
   "https://wa.me/5543988281227?text=Ol%C3%A1%2C%20Ijoel%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20solicitar%20um%20or%C3%A7amento%20para%20um%20projeto%20digital.";
+const customQuoteUrl =
+  "https://wa.me/5543988281227?text=Ol%C3%A1%2C%20Ijoel!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20montar%20um%20or%C3%A7amento%20personalizado.%20Meu%20neg%C3%B3cio%20%C3%A9%3A%20____%20e%20preciso%20de%3A%20____.";
 const instagramUrl = "https://www.instagram.com/ijoel_mota/";
 
 export default function Home() {
@@ -282,14 +284,14 @@ export default function Home() {
           <p>O plano mensal reduz o investimento inicial. O básico entrega uma solução enxuta, e o personalizado oferece estrutura e suporte contínuo.</p>
         </div>
 
-        <div className="pricing-promise"><span>✓</span><strong>Sem preço escondido</strong><p>As condições principais aparecem aqui; detalhes de domínio e conteúdo são definidos na proposta.</p></div>
+        <div className="pricing-promise"><span>✓</span><strong>Valores claros para começar</strong><p>Os preços indicam uma base. O valor final depende do conteúdo, das funções e da estrutura necessária para o projeto.</p></div>
 
         <div className="pricing-grid">
           <article className="price-card">
             <span className="price-number">01</span>
             <p>PROJETO BÁSICO</p>
             <h3>Uma presença digital enxuta para começar com segurança.</h3>
-            <div className="plan-price"><strong>R$ 356,90</strong><span>pagamento único</span></div>
+            <div className="plan-price"><strong>R$ 356,90</strong><span>valor inicial • pagamento único</span></div>
             <ul><li>Landing page ou catálogo básico</li><li>Layout responsivo para celular</li><li>Contato integrado ao WhatsApp</li></ul>
             <div className="plan-condition">Hospedagem, domínio e alterações futuras são cobrados separadamente.</div>
             <a href={whatsappUrl} target="_blank" rel="noreferrer">Quero o básico ↗</a>
@@ -308,7 +310,7 @@ export default function Home() {
             <span className="price-number">03</span>
             <p>PERSONALIZADO SOB MEDIDA</p>
             <h3>Uma estrutura exclusiva, desenvolvida para o seu negócio.</h3>
-            <div className="plan-price split-price"><strong>R$ 889,90</strong><span>+ R$ 100/mês</span></div>
+            <div className="plan-price split-price"><strong>R$ 889,90</strong><span>valor inicial + manutenção a partir de R$ 100/mês</span></div>
             <ul><li>Design e estrutura personalizados</li><li>Mais páginas, recursos e integrações</li><li>Hospedagem, suporte e manutenção</li></ul>
             <div className="plan-condition">O valor pode variar quando o projeto exigir funções ou integrações mais complexas.</div>
             <a href={whatsappUrl} target="_blank" rel="noreferrer">Quero algo sob medida ↗</a>
@@ -316,8 +318,14 @@ export default function Home() {
         </div>
 
         <div className="maintenance-note">
-          <div><span>QUAL FAZ MAIS SENTIDO?</span><strong>Mensal para começar com menos, básico para algo enxuto ou personalizado para crescer.</strong></div>
-          <p>Sistemas completos, automações e projetos com banco de dados recebem orçamento próprio após o diagnóstico.</p>
+          <div>
+            <span>NÃO ENCONTROU A OPÇÃO IDEAL?</span>
+            <strong>Vamos montar uma proposta justa para o que seu negócio realmente precisa.</strong>
+            <p>Você explica seu negócio e seu objetivo. Eu avalio a estrutura necessária e apresento um orçamento sem compromisso.</p>
+          </div>
+          <a className="button primary" href={customQuoteUrl} target="_blank" rel="noreferrer">
+            Solicitar orçamento personalizado ↗
+          </a>
         </div>
       </section>
 
