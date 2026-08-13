@@ -29,8 +29,6 @@ const resources = [
 
 const whatsappUrl =
   "https://wa.me/5543988281227?text=Ol%C3%A1%2C%20Ijoel%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20solicitar%20um%20or%C3%A7amento%20para%20um%20projeto%20digital.";
-const customQuoteUrl =
-  "https://wa.me/5543988281227?text=Ol%C3%A1%2C%20Ijoel!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20montar%20um%20or%C3%A7amento%20personalizado.%20Meu%20neg%C3%B3cio%20%C3%A9%3A%20____%20e%20preciso%20de%3A%20____.";
 const instagramUrl = "https://www.instagram.com/ijoel_mota/";
 
 export default function Home() {
@@ -45,6 +43,7 @@ export default function Home() {
 
         <nav aria-label="Navegação principal">
           <a href="#solucao">Solução</a>
+          <a href="#demonstracoes">Demonstrações</a>
           <a href="#projetos">Projetos</a>
           <a href="#processo">Como funciona</a>
           <a href="#sobre">Sobre mim</a>
@@ -135,6 +134,44 @@ export default function Home() {
         <p>O catálogo organiza a decisão.</p>
         <span>→</span>
         <p>O WhatsApp recebe o cliente pronto.</p>
+      </section>
+
+      <section className="demos" id="demonstracoes">
+        <div className="demos-heading">
+          <div>
+            <p className="eyebrow"><span /> Demonstrações para negócios reais</p>
+            <h2>Uma ideia ganha força quando você consegue testar.</h2>
+          </div>
+          <p>
+            Cada demonstração é criada para mostrar, de forma prática, como um
+            negócio pode organizar produtos e facilitar os pedidos pelo celular.
+          </p>
+        </div>
+
+        <article className="demo-card">
+          <div className="demo-device" aria-hidden="true">
+            <div className="demo-device-bar"><span>9:41</span><i /></div>
+            <div className="demo-brand"><span>K</span><div><small>CATÁLOGO DIGITAL</small><strong>Kichi Perfumaria</strong></div></div>
+            <div className="demo-hero"><small>PERFUMES E PRESENTES</small><strong>Encontre seu próximo mimo.</strong><span>Produtos organizados em um só link.</span></div>
+            <div className="demo-pills"><span>Presentes</span><span>Perfumes</span><span>Promoções</span></div>
+            <div className="demo-products"><i /><i /><i /></div>
+            <div className="demo-wa">Pedir pelo WhatsApp <b>↗</b></div>
+          </div>
+          <div className="demo-copy">
+            <div className="case-meta"><span>DEMONSTRAÇÃO 01</span><strong>CATÁLOGO INTERATIVO</strong></div>
+            <p className="case-kicker">Kichi Perfumaria</p>
+            <h3>Produtos, promoções e pedidos em um só lugar.</h3>
+            <p>
+              Prévia de um catálogo pensado para transformar o link da bio em
+              um caminho simples: a cliente encontra o produto, confere a
+              oferta e chama a loja pelo WhatsApp.
+            </p>
+            <a className="demo-link" href="https://kichic-perfumarias.vercel.app/" target="_blank" rel="noreferrer">
+              Abrir demonstração <span>↗</span>
+            </a>
+            <small className="demo-note">Projeto demonstrativo criado para apresentação. A versão final é ajustada junto ao negócio.</small>
+          </div>
+        </article>
       </section>
 
       <section className="projects" id="projetos">
@@ -272,60 +309,6 @@ export default function Home() {
             <Image src="/segmentos/industria.webp" alt="Ambiente industrial moderno com máquinas" width={1200} height={800} />
             <div><span>04</span><strong>Indústrias</strong><small>Produtos, aplicações e orçamento</small></div>
           </article>
-        </div>
-      </section>
-
-      <section className="pricing" id="precos">
-        <div className="pricing-heading">
-          <div>
-            <p className="eyebrow dark"><span /> Três formas de começar</p>
-            <h2>Escolha quanto quer investir agora e como prefere continuar.</h2>
-          </div>
-          <p>O plano mensal reduz o investimento inicial. O básico entrega uma solução enxuta, e o personalizado oferece estrutura e suporte contínuo.</p>
-        </div>
-
-        <div className="pricing-promise"><span>✓</span><strong>Valores claros para começar</strong><p>Os preços indicam uma base. O valor final depende do conteúdo, das funções e da estrutura necessária para o projeto.</p></div>
-
-        <div className="pricing-grid">
-          <article className="price-card">
-            <span className="price-number">01</span>
-            <p>PROJETO BÁSICO</p>
-            <h3>Uma presença digital enxuta para começar com segurança.</h3>
-            <div className="plan-price"><strong>R$ 356,90</strong><span>valor inicial • pagamento único</span></div>
-            <ul><li>Landing page ou catálogo básico</li><li>Layout responsivo para celular</li><li>Contato integrado ao WhatsApp</li></ul>
-            <div className="plan-condition">Hospedagem, domínio e alterações futuras são cobrados separadamente.</div>
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">Quero o básico ↗</a>
-          </article>
-          <article className="price-card featured-price">
-            <span className="popular-label">MENOR INVESTIMENTO INICIAL</span>
-            <span className="price-number">02</span>
-            <p>PLANO MENSAL</p>
-            <h3>Criação, hospedagem e cuidado contínuo sem uma entrada alta.</h3>
-            <div className="plan-price"><strong>R$ 288,90</strong><span>por mês</span></div>
-            <ul><li>Criação do site ou catálogo incluída</li><li>Hospedagem e suporte contínuo</li><li>Pequenas atualizações mensais</li></ul>
-            <div className="plan-condition">Permanência mínima de 6 meses. O site permanece ativo enquanto o plano estiver vigente.</div>
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">Quero o plano mensal ↗</a>
-          </article>
-          <article className="price-card">
-            <span className="price-number">03</span>
-            <p>PERSONALIZADO SOB MEDIDA</p>
-            <h3>Uma estrutura exclusiva, desenvolvida para o seu negócio.</h3>
-            <div className="plan-price split-price"><strong>R$ 889,90</strong><span>valor inicial + manutenção a partir de R$ 100/mês</span></div>
-            <ul><li>Design e estrutura personalizados</li><li>Mais páginas, recursos e integrações</li><li>Hospedagem, suporte e manutenção</li></ul>
-            <div className="plan-condition">O valor pode variar quando o projeto exigir funções ou integrações mais complexas.</div>
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">Quero algo sob medida ↗</a>
-          </article>
-        </div>
-
-        <div className="maintenance-note">
-          <div>
-            <span>NÃO ENCONTROU A OPÇÃO IDEAL?</span>
-            <strong>Vamos montar uma proposta justa para o que seu negócio realmente precisa.</strong>
-            <p>Você explica seu negócio e seu objetivo. Eu avalio a estrutura necessária e apresento um orçamento sem compromisso.</p>
-          </div>
-          <a className="button primary" href={customQuoteUrl} target="_blank" rel="noreferrer">
-            Solicitar orçamento personalizado ↗
-          </a>
         </div>
       </section>
 
