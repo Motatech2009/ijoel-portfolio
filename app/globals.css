@@ -135,6 +135,38 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(38px, 4vw, 58px); line-height
 .problem-strip p { margin: 0; color: #d8deea; font-size: 11px; font-weight: 800; letter-spacing: .03em; }
 .problem-strip span { color: var(--emerald); }
 
+.demos { padding: 118px clamp(22px, 6vw, 92px); background: linear-gradient(145deg, #0c1730, #1c1534 58%, #071b22); }
+.demos-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 45px; max-width: 1320px; margin: 0 auto 62px; }
+.demos-heading > p { max-width: 470px; margin: 0; color: #abb5c6; font-size: 15px; line-height: 1.75; }
+.demo-card { display: grid; grid-template-columns: minmax(360px, .84fr) minmax(0, 1.16fr); gap: clamp(45px, 8vw, 125px); align-items: center; max-width: 1320px; margin: auto; padding: clamp(30px, 5vw, 62px); border: 1px solid rgba(255,255,255,.13); background: linear-gradient(120deg, rgba(255,255,255,.07), rgba(255,255,255,.025)); box-shadow: 0 32px 90px rgba(0,0,0,.25); }
+.demo-device { width: min(100%, 290px); margin: auto; padding: 11px; border: 7px solid #f5f2f4; border-radius: 35px; background: #fff9fb; color: #3a2235; box-shadow: 0 30px 65px rgba(0,0,0,.35), 0 0 0 1px rgba(255,255,255,.25); transform: rotate(-3deg); }
+.demo-device-bar { display: flex; align-items: center; justify-content: space-between; height: 16px; padding: 0 9px; color: #6d5967; font-size: 7px; font-weight: 800; }
+.demo-device-bar i { width: 50px; height: 10px; border-radius: 10px; background: #352634; }
+.demo-brand { display: flex; align-items: center; gap: 8px; padding: 10px 6px; }
+.demo-brand > span { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #e42687, #6c183f); color: #fff; font-family: Georgia, serif; font-size: 18px; font-weight: 700; }
+.demo-brand div { display: flex; flex-direction: column; gap: 3px; }
+.demo-brand small { color: #a87793; font-size: 5px; font-weight: 900; letter-spacing: .12em; }
+.demo-brand strong { font-size: 11px; }
+.demo-hero { display: flex; flex-direction: column; gap: 6px; padding: 20px 17px; border-radius: 20px; background: linear-gradient(135deg, #741839, #d93683 56%, #f6a6c4); color: #fff; }
+.demo-hero small { color: #ffe0ec; font-size: 6px; font-weight: 900; letter-spacing: .13em; }
+.demo-hero strong { max-width: 160px; font-family: Georgia, serif; font-size: 21px; line-height: 1; letter-spacing: -.05em; }
+.demo-hero span { color: #ffe6f0; font-size: 7px; }
+.demo-pills { display: flex; gap: 6px; margin: 12px 1px 9px; overflow: hidden; }
+.demo-pills span { flex: 0 0 auto; padding: 7px 9px; border-radius: 12px; background: #f7e3ec; color: #8b3158; font-size: 7px; font-weight: 800; }
+.demo-products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; }
+.demo-products i { height: 70px; border-radius: 12px; background: linear-gradient(150deg, #f7e4ec, #e7a4bd); }
+.demo-products i:nth-child(2) { background: linear-gradient(150deg, #ffdfa4, #c87d3b); }
+.demo-products i:nth-child(3) { background: linear-gradient(150deg, #e3d5f4, #9a78c9); }
+.demo-wa { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; padding: 11px 13px; border-radius: 14px; background: #20c983; color: #052015; font-size: 8px; font-weight: 900; }
+.demo-wa b { font-size: 15px; }
+.demo-copy .case-meta { margin-bottom: 30px; }
+.demo-copy h3 { max-width: 720px; margin: 0; font-size: clamp(42px, 4.6vw, 67px); line-height: .96; letter-spacing: -.06em; }
+.demo-copy > p:not(.case-kicker) { max-width: 625px; margin: 25px 0 0; color: #b5bed0; font-size: 15px; line-height: 1.78; }
+.demo-link { display: inline-flex; align-items: center; gap: 28px; min-height: 55px; margin-top: 32px; padding: 0 22px; background: #fff; color: #1b1723; font-size: 10px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; transition: transform .2s ease, box-shadow .2s ease; }
+.demo-link:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(0,0,0,.24); }
+.demo-link span { color: #b21d62; font-size: 17px; }
+.demo-note { display: block; max-width: 520px; margin-top: 17px; color: #8792a5; font-size: 9px; line-height: 1.6; }
+
 .projects { padding: 118px clamp(22px, 6vw, 92px); background: #06101e; }
 .projects-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 45px; max-width: 1320px; margin: 0 auto 62px; }
 .projects-heading > p { max-width: 470px; margin: 0; color: #98a5b8; font-size: 15px; line-height: 1.75; }
@@ -272,7 +304,8 @@ footer p { margin: 0; font-size: 9px; }
   .hero-copy { max-width: 920px; }
   .hero-visual { min-height: 590px; }
   .resource-grid { grid-template-columns: repeat(2, 1fr); }
-  .projects-heading, .pricing-heading { align-items: flex-start; flex-direction: column; }
+  .projects-heading, .demos-heading, .pricing-heading { align-items: flex-start; flex-direction: column; }
+  .demo-card { grid-template-columns: 1fr; }
   .case-study { grid-template-columns: 1fr; }
   .case-study-reverse .case-media, .case-study-reverse .case-copy { order: initial; }
   .process { grid-template-columns: 1fr; }
@@ -311,7 +344,7 @@ footer p { margin: 0; font-size: 9px; }
   .resource-card h3 { margin-top: 58px; }
   .problem-strip { align-items: flex-start; flex-direction: column; gap: 10px; }
   .problem-strip span { transform: rotate(90deg); }
-  .projects, .process, .segments, .pricing, .about, .contact { padding-top: 78px; padding-bottom: 78px; }
+  .projects, .demos, .process, .segments, .pricing, .about, .contact { padding-top: 78px; padding-bottom: 78px; }
   .case-study { padding: 34px 0 54px; }
   .case-study + .case-study { padding-top: 54px; }
   .case-gallery { grid-template-columns: 1fr; }
@@ -319,6 +352,8 @@ footer p { margin: 0; font-size: 9px; }
   .case-gallery .gallery-main, .case-gallery a { aspect-ratio: 1.55 / 1; }
   .project-features { grid-template-columns: 1fr; }
   .case-meta { align-items: flex-start; flex-direction: column; }
+  .demo-card { gap: 42px; padding: 28px 20px 36px; }
+  .demo-device { transform: none; }
   .maintenance-note { grid-template-columns: 1fr; gap: 18px; }
   .pricing-promise { grid-template-columns: 36px 1fr; }
   .pricing-promise p { grid-column: 1 / -1; }
