@@ -188,7 +188,7 @@ export default function Home() {
         </div>
 
         <article className="case-study">
-          <div className="case-media case-media-single">
+          <div className="case-media case-media-single case-media-login">
             <a href="/projetos/sim-saude-painel.png" target="_blank" rel="noreferrer" aria-label="Ampliar painel do SIM Saúde">
               <Image
                 src="/projetos/sim-saude-painel.png"
@@ -256,23 +256,16 @@ export default function Home() {
         </article>
 
         <article className="case-study">
-          <div className="case-media case-flow" aria-label="Fluxo do Sistema Digital de Fichas de Estágio">
-            <div className="flow-heading">
-              <span>FLUXO DIGITAL</span>
-              <strong>Da atividade à ficha validada</strong>
+          <div className="case-media case-media-single">
+            <div className="case-screen">
+              <Image
+                src="/projetos/formacao-docentes-login.png"
+                alt="Tela de acesso do Sistema Digital de Fichas de Estágio"
+                width={1439}
+                height={893}
+              />
             </div>
-            <div className="flow-track">
-              <div className="flow-step"><span>01</span><strong>Aluno</strong><small>Registra a atividade</small></div>
-              <i aria-hidden="true">→</i>
-              <div className="flow-step"><span>02</span><strong>Equipe pedagógica</strong><small>Analisa e valida</small></div>
-              <i aria-hidden="true">→</i>
-              <div className="flow-step"><span>03</span><strong>Horas</strong><small>Cálculo automático</small></div>
-              <i aria-hidden="true">→</i>
-              <div className="flow-step"><span>04</span><strong>Ficha A4</strong><small>Impressão e PDF</small></div>
-            </div>
-            <div className="flow-stack">
-              <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>Vercel</span>
-            </div>
+            <span className="screen-caption">Tela de acesso • imagem sem dados pessoais</span>
           </div>
           <div className="case-copy">
             <div className="case-meta"><span>03</span><strong>Publicado • Formação de Docentes</strong></div>
@@ -291,15 +284,12 @@ export default function Home() {
               <li>Cálculo de horas, histórico, auditoria e ficha A4</li>
             </ul>
             <div className="project-impact"><span>IMPACTO</span><strong>Menos papel e mais controle sobre atividades, horas e validações pedagógicas.</strong></div>
-            <a className="project-link" href="https://curso-formacao-de-docentes.vercel.app/" target="_blank" rel="noreferrer">
-              Ver sistema publicado <span>↗</span>
-            </a>
           </div>
         </article>
 
         <div className="privacy-note">
           <span>▣</span>
-          <p><strong>Privacidade preservada.</strong> Dados pessoais, informações de pacientes e telas sensíveis não são divulgados neste portfólio.</p>
+          <p><strong>Privacidade preservada.</strong> Dados pessoais, informações de pacientes ou alunos e telas sensíveis não são divulgados neste portfólio.</p>
         </div>
       </section>
 

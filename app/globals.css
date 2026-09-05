@@ -176,9 +176,11 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(38px, 4vw, 58px); line-height
 .case-study-reverse .case-copy { order: 1; }
 .case-media { position: relative; min-width: 0; }
 .case-media a { display: block; overflow: hidden; border: 1px solid rgba(255,255,255,.14); background: #0a1725; box-shadow: 0 28px 80px rgba(0,0,0,.32); }
+.case-media .case-screen { display: block; overflow: hidden; border: 1px solid rgba(255,255,255,.14); background: #0a1725; box-shadow: 0 28px 80px rgba(0,0,0,.32); }
 .case-media img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .35s ease, filter .35s ease; }
 .case-media a:hover img { transform: scale(1.018); filter: brightness(1.05); }
-.case-media-single a { aspect-ratio: 2.13 / 1; }
+.case-media-single a, .case-media-single .case-screen { aspect-ratio: 2.13 / 1; }
+.case-media-login .case-screen { aspect-ratio: 1439 / 893; }
 .case-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .case-gallery a { aspect-ratio: 2.15 / 1; }
 .case-gallery .gallery-main { grid-column: 1 / -1; aspect-ratio: 1.46 / 1; }
@@ -195,21 +197,6 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(38px, 4vw, 58px); line-height
 .project-impact { display: flex; flex-direction: column; gap: 7px; margin-top: 30px; padding: 18px 20px; border-left: 2px solid var(--violet); background: rgba(119,101,238,.07); }
 .project-impact span { color: #9f94f6; font-size: 7px; font-weight: 900; letter-spacing: .18em; }
 .project-impact strong { color: #eef1f6; font-size: 12px; line-height: 1.5; }
-.project-link { display: inline-flex; align-items: center; gap: 22px; min-height: 46px; margin-top: 22px; padding: 0 17px; border: 1px solid rgba(33,216,154,.28); color: var(--emerald); font-size: 9px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; transition: transform .2s ease, background .2s ease; }
-.project-link:hover { transform: translateY(-2px); background: rgba(33,216,154,.08); }
-.project-link span { font-size: 15px; }
-.case-flow { min-height: 430px; padding: clamp(24px, 4vw, 46px); border: 1px solid rgba(255,255,255,.14); background: radial-gradient(circle at 82% 18%, rgba(217,132,59,.16), transparent 32%), linear-gradient(145deg, #10241f, #091612 70%); box-shadow: 0 28px 80px rgba(0,0,0,.32); }
-.flow-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,.1); }
-.flow-heading span { color: #d9843b; font-size: 8px; font-weight: 900; letter-spacing: .16em; }
-.flow-heading strong { max-width: 280px; text-align: right; font-size: clamp(18px, 2vw, 27px); line-height: 1.08; letter-spacing: -.035em; }
-.flow-track { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; gap: 12px; align-items: center; margin-top: 44px; }
-.flow-track > i { color: #d9843b; font-size: 17px; font-style: normal; }
-.flow-step { min-width: 0; }
-.flow-step span { display: block; margin-bottom: 22px; color: #d9843b; font-size: 9px; font-weight: 900; letter-spacing: .14em; }
-.flow-step strong { display: block; color: #f8f5eb; font-size: 14px; line-height: 1.2; }
-.flow-step small { display: block; margin-top: 7px; color: #8fa299; font-size: 9px; line-height: 1.45; }
-.flow-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 48px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.1); }
-.flow-stack span { padding: 7px 9px; border: 1px solid rgba(255,255,255,.1); color: #9eb0a7; font-size: 8px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .privacy-note { display: flex; align-items: center; gap: 15px; max-width: 1320px; margin: 10px auto 0; padding: 20px 22px; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.025); }
 .privacy-note > span { display: grid; place-items: center; flex: 0 0 38px; width: 38px; height: 38px; border-radius: 11px; background: rgba(33,216,154,.1); color: var(--emerald); }
 .privacy-note p { margin: 0; color: #8290a4; font-size: 11px; line-height: 1.6; }
@@ -279,10 +266,10 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(38px, 4vw, 58px); line-height
 .maintenance-note p { margin: 0; color: #657087; font-size: 10px; line-height: 1.65; }
 
 .about { display: grid; grid-template-columns: minmax(320px, .8fr) minmax(0, 1.2fr); gap: clamp(55px, 9vw, 130px); align-items: center; padding: 120px clamp(22px, 6vw, 92px); background: linear-gradient(135deg, #0b1730, #10143b); }
-.age-card { position: relative; display: grid; place-items: center; min-height: 470px; overflow: hidden; border: 1px solid rgba(169,157,255,.23); background: radial-gradient(circle at 50% 35%, rgba(119,101,238,.34), transparent 48%), rgba(255,255,255,.025); }
+.age-card { position: relative; display: flex; align-items: center; justify-content: center; flex-direction: column; min-height: 470px; overflow: hidden; border: 1px solid rgba(169,157,255,.23); background: radial-gradient(circle at 50% 35%, rgba(119,101,238,.34), transparent 48%), rgba(255,255,255,.025); }
 .age-card::before { content: ""; position: absolute; width: 330px; height: 330px; border: 1px solid rgba(33,216,154,.16); border-radius: 50%; }
-.age-card span { position: relative; z-index: 2; margin-top: 35px; font-size: clamp(120px, 16vw, 210px); font-weight: 900; line-height: .72; letter-spacing: -.1em; background: linear-gradient(150deg, #fff, #9e91ff); color: transparent; background-clip: text; -webkit-background-clip: text; }
-.age-card p { position: relative; z-index: 2; margin: -18px 0 0; color: var(--emerald); font-size: 14px; font-weight: 900; letter-spacing: .28em; text-transform: uppercase; }
+.age-card span { position: relative; z-index: 2; margin: 0; transform: translateX(.04em); font-size: clamp(120px, 16vw, 210px); font-weight: 900; line-height: .72; letter-spacing: -.1em; background: linear-gradient(150deg, #fff, #9e91ff); color: transparent; background-clip: text; -webkit-background-clip: text; }
+.age-card p { position: relative; z-index: 2; margin: 20px 0 0; color: var(--emerald); font-size: 14px; font-weight: 900; letter-spacing: .28em; text-transform: uppercase; }
 .age-card small { position: absolute; right: 25px; bottom: 25px; color: #808ca2; font-size: 7px; font-weight: 900; letter-spacing: .18em; }
 .about-copy { max-width: 720px; }
 .about-copy h2 { color: #fff; }
@@ -367,13 +354,6 @@ footer p { margin: 0; font-size: 9px; }
   .case-gallery .gallery-main, .case-gallery a { aspect-ratio: 1.55 / 1; }
   .project-features { grid-template-columns: 1fr; }
   .case-meta { align-items: flex-start; flex-direction: column; }
-  .case-flow { min-height: 0; }
-  .flow-heading { align-items: flex-start; flex-direction: column; }
-  .flow-heading strong { text-align: left; }
-  .flow-track { grid-template-columns: 1fr; gap: 12px; margin-top: 30px; }
-  .flow-track > i { transform: rotate(90deg); transform-origin: left center; }
-  .flow-step span { margin-bottom: 7px; }
-  .flow-stack { margin-top: 32px; }
   .demo-card { gap: 42px; padding: 28px 20px 36px; }
   .demo-device { transform: none; }
   .maintenance-note { grid-template-columns: 1fr; gap: 18px; }
