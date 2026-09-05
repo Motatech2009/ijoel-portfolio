@@ -177,13 +177,13 @@ export default function Home() {
       <section className="projects" id="projetos">
         <div className="projects-heading">
           <div>
-            <p className="eyebrow"><span /> Projetos reais em operação</p>
+            <p className="eyebrow"><span /> Projetos reais entregues</p>
             <h2>Software que saiu da ideia e entrou na rotina.</h2>
           </div>
           <p>
             Além de sites e catálogos, desenvolvo sistemas sob medida para
-            resolver processos reais. Estas soluções já são utilizadas no
-            município de Primeiro de Maio/PR.
+            resolver processos reais em serviços públicos e instituições da
+            região de Primeiro de Maio/PR.
           </p>
         </div>
 
@@ -255,6 +255,48 @@ export default function Home() {
           </div>
         </article>
 
+        <article className="case-study">
+          <div className="case-media case-flow" aria-label="Fluxo do Sistema Digital de Fichas de Estágio">
+            <div className="flow-heading">
+              <span>FLUXO DIGITAL</span>
+              <strong>Da atividade à ficha validada</strong>
+            </div>
+            <div className="flow-track">
+              <div className="flow-step"><span>01</span><strong>Aluno</strong><small>Registra a atividade</small></div>
+              <i aria-hidden="true">→</i>
+              <div className="flow-step"><span>02</span><strong>Equipe pedagógica</strong><small>Analisa e valida</small></div>
+              <i aria-hidden="true">→</i>
+              <div className="flow-step"><span>03</span><strong>Horas</strong><small>Cálculo automático</small></div>
+              <i aria-hidden="true">→</i>
+              <div className="flow-step"><span>04</span><strong>Ficha A4</strong><small>Impressão e PDF</small></div>
+            </div>
+            <div className="flow-stack">
+              <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>Vercel</span>
+            </div>
+          </div>
+          <div className="case-copy">
+            <div className="case-meta"><span>03</span><strong>Publicado • Formação de Docentes</strong></div>
+            <p className="case-kicker">Sistema Digital de Fichas de Estágio</p>
+            <h3>Formação de Docentes</h3>
+            <p>
+              Plataforma criada para digitalizar as fichas de Prática de
+              Formação do Curso de Formação de Docentes do Colégio Estadual
+              Marechal Castelo Branco, substituindo registros físicos por um
+              fluxo seguro de acompanhamento e validação.
+            </p>
+            <ul className="project-features">
+              <li>Acesso separado para aluno, professor e coordenação</li>
+              <li>Cadastro de turmas, alunos e períodos trimestrais</li>
+              <li>Registro, revisão e correção de atividades</li>
+              <li>Cálculo de horas, histórico, auditoria e ficha A4</li>
+            </ul>
+            <div className="project-impact"><span>IMPACTO</span><strong>Menos papel e mais controle sobre atividades, horas e validações pedagógicas.</strong></div>
+            <a className="project-link" href="https://curso-formacao-de-docentes.vercel.app/" target="_blank" rel="noreferrer">
+              Ver sistema publicado <span>↗</span>
+            </a>
+          </div>
+        </article>
+
         <div className="privacy-note">
           <span>▣</span>
           <p><strong>Privacidade preservada.</strong> Dados pessoais, informações de pacientes e telas sensíveis não são divulgados neste portfólio.</p>
@@ -313,8 +355,8 @@ export default function Home() {
       </section>
 
       <section className="about" id="sobre">
-        <div className="age-card" aria-label="16 anos, desenvolvedor de software">
-          <span>16</span>
+        <div className="age-card" aria-label="17 anos, desenvolvedor de software">
+          <span>17</span>
           <p>anos</p>
           <small>DESENVOLVENDO O PRÓXIMO PASSO</small>
         </div>
@@ -327,13 +369,14 @@ export default function Home() {
             comunicar melhor.
           </p>
           <p>
-            Aos 16 anos, uno olhar jovem, proximidade e execução ágil para criar
+            Aos 17 anos, uno olhar jovem, proximidade e execução ágil para criar
             soluções que fazem sentido para cada empresa — sem burocracia e sem
             empurrar mensalidades abusivas de sistemas engessados.
           </p>
           <p>
-            Hoje, sistemas que desenvolvi já apoiam processos de exames e do
-            transporte de saúde no município de Primeiro de Maio/PR.
+            Hoje, sistemas que desenvolvi apoiam processos de exames,
+            transporte de saúde e formação docente na região de Primeiro de
+            Maio/PR.
           </p>
           <div className="about-tags"><span>Desenvolvimento</span><span>UI/UX</span><span>Comércio local</span></div>
           <blockquote className="signature-quote">
