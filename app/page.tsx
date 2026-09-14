@@ -259,10 +259,10 @@ export default function Home() {
           <div className="case-media case-media-single">
             <div className="case-screen">
               <Image
-                src="/projetos/formacao-docentes-login.png"
-                alt="Tela de acesso do Sistema Digital de Fichas de Estágio"
-                width={1439}
-                height={893}
+                  src="/projetos/formacao-docentes-login.jpg"
+                  alt="Tela de acesso do Sistema Digital de Fichas de Estágio"
+                  width={1200}
+                  height={745}
               />
             </div>
             <span className="screen-caption">Tela de acesso • imagem sem dados pessoais</span>
@@ -345,11 +345,6 @@ export default function Home() {
       </section>
 
       <section className="about" id="sobre">
-        <div className="age-card" aria-label="17 anos, desenvolvedor de software">
-          <span>17</span>
-          <p>anos</p>
-          <small>DESENVOLVENDO O PRÓXIMO PASSO</small>
-        </div>
         <div className="about-copy">
           <p className="eyebrow"><span /> Quem está por trás</p>
           <h2>Prazer, eu sou o Ijoel.</h2>
@@ -359,7 +354,7 @@ export default function Home() {
             comunicar melhor.
           </p>
           <p>
-            Aos 17 anos, uno olhar jovem, proximidade e execução ágil para criar
+            Com olhar jovem, proximidade e execução ágil, crio
             soluções que fazem sentido para cada empresa — sem burocracia e sem
             empurrar mensalidades abusivas de sistemas engessados.
           </p>
