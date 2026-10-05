@@ -30,6 +30,7 @@ const resources = [
 const whatsappUrl =
   "https://wa.me/5543988281227?text=Ol%C3%A1%2C%20Ijoel%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20solicitar%20um%20or%C3%A7amento%20para%20um%20projeto%20digital.";
 const instagramUrl = "https://www.instagram.com/ijoel_mota/";
+const ebookSalesUrl = "https://multi-agent-pipeline-six.vercel.app/";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
         <nav aria-label="Navegação principal">
           <a href="#solucao">Solução</a>
           <a href="#demonstracoes">Demonstrações</a>
+          <a href="#ebook">E-book</a>
           <a href="#projetos">Projetos</a>
           <a href="#processo">Como funciona</a>
           <a href="#sobre">Sobre mim</a>
@@ -172,6 +174,47 @@ export default function Home() {
             <small className="demo-note">Projeto demonstrativo criado para apresentação. A versão final é ajustada junto ao negócio.</small>
           </div>
         </article>
+      </section>
+
+      <section className="ebook" id="ebook">
+        <div className="ebook-shell">
+          <a
+            className="ebook-cover"
+            href={ebookSalesUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Abrir a página de vendas do e-book Multi-Agent Pipeline"
+          >
+            <img
+              src="https://multi-agent-pipeline-six.vercel.app/capa.png"
+              alt="Capa do e-book Multi-Agent Pipeline — Engenharia de Software Assistida por IA"
+              width="1024"
+              height="1280"
+              loading="lazy"
+            />
+          </a>
+
+          <div className="ebook-copy">
+            <p className="eyebrow"><span /> Produto digital autoral</p>
+            <span className="ebook-label">E-BOOK • ENGENHARIA DE SOFTWARE COM IA</span>
+            <h2>Multi-Agent Pipeline</h2>
+            <p className="ebook-lead">
+              Um sistema de trabalho para transformar conversas soltas com IA
+              em um processo de desenvolvimento organizado, controlado e
+              reproduzível.
+            </p>
+            <ul className="ebook-features">
+              <li>Escopo e contexto organizados</li>
+              <li>Cinco papéis especializados</li>
+              <li>Handoffs e checkpoints verificáveis</li>
+              <li>Prompts, templates e aplicação prática</li>
+            </ul>
+            <a className="ebook-link" href={ebookSalesUrl} target="_blank" rel="noreferrer">
+              Conhecer o e-book
+            </a>
+            <small>Conheça o conteúdo completo e as condições na página de vendas.</small>
+          </div>
+        </div>
       </section>
 
       <section className="projects" id="projetos">
